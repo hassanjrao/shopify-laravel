@@ -221,6 +221,27 @@
                                 <h1>{{ $product->name }}</h1>
 
                             </div>
+                            <div class="" id="price-template--20954407993673__main" role="status">
+                                <div
+                                    class="
+                                    price price--large price--on-sale price--show-badge">
+                                    <div class="price__container">
+
+                                        <div class="price__sale">
+
+                                            </span><span class="visually-hidden visually-hidden--inline">Sale price</span>
+                                            <span class="price-item price-item--sale price-item--last">
+                                                {{ env('APP_CURRENCY').$product->price }}
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <span class="badge price__badge-sale color-scheme-4">
+                                        Sale
+                                    </span>
+
+                                </div>
+                            </div>
 
                             <div id="Quantity-Form-template--20954407993673__main"
                                 class="product-form__input product-form__quantity">
@@ -316,7 +337,7 @@
                 quantity: quantity,
             }
 
-            console.log('dd',data);
+            console.log('dd', data);
 
             let cartCount = document.getElementById('cartCount').innerText;
 
