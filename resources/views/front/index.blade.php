@@ -137,9 +137,9 @@
                             data-cascade="" style="--animation-order: 1;">
 
                         </h2>
-                        <div class="rich-text__buttons scroll-trigger animate--slide-in" data-cascade=""
+                        {{-- <div class="rich-text__buttons scroll-trigger animate--slide-in" data-cascade=""
                             style="--animation-order: 2;"><a href="/collections/all" class="button button--primary">SHOP
-                                MORE</a></div>
+                                MORE</a></div> --}}
                     </div>
                 </div>
             </div>
