@@ -23,6 +23,13 @@ use Maatwebsite\Excel\Facades\Excel;
 |
 */
 
+Route::get('test',function(){
+
+    // storage link
+    symlink('/home/tem0jydr5cc0/public_html/storage/app/public','/home/tem0jydr5cc0/public_html/storage');
+
+});
+
 // Example Routes
 Route::match(['get', 'post'], '/', function () {
     return view('front.index');
