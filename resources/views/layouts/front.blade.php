@@ -841,8 +841,7 @@
                         <h2 class="footer-block__heading inline-richtext"><strong>FOR RELEASE UPDATES AND EXCLUSIVE
                                 ACCESS</strong>
                         </h2>
-                        <form method="post" action="https://carsicko-uk.com/contact#ContactFooter"
-                            id="ContactFooter" accept-charset="UTF-8" class="footer__newsletter newsletter-form">
+                        <form method="post" >
                             <input type="hidden" name="form_type" value="customer" /><input type="hidden"
                                 name="utf8" value="✓" /><input type="hidden" name="contact[tags]"
                                 value="newsletter">
@@ -856,7 +855,7 @@
                                         for="NewsletterForm--sections--20954408452425__footer">
                                         Email
                                     </label>
-                                    <button type="submit" class="newsletter-form__button field__button"
+                                    <button type="button" class="newsletter-form__button field__button"
                                         name="commit" id="Subscribe" aria-label="Subscribe">
                                         <svg viewBox="0 0 14 10" fill="none" aria-hidden="true"
                                             focusable="false" class="icon icon-arrow"
