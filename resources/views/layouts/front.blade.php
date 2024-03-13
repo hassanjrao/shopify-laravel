@@ -619,6 +619,15 @@
                 fill="currentColor">
         </symbol>
         </svg>
+
+        {{-- top banner --}}
+
+        <div style="text-align: center">
+            <h3>HOLY GRAIL SALE ENDS 18TH FEB!</h3>
+        </div>
+
+
+
         <sticky-header data-sticky-type="on-scroll-up"
             class="header-wrapper color-scheme-1 gradient header-wrapper--border-bottom">
             <header
