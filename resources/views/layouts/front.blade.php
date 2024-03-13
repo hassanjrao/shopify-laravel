@@ -704,7 +704,7 @@
                                                     </div>
                                                 </details>
                                             </li>
-                                            <li><a id="HeaderDrawer-contact-us" href="pages/contact.html"
+                                            <li><a id="HeaderDrawer-contact-us" href="{{ route('contact-us.index') }}"
                                                     class="menu-drawer__menu-item list-menu__item link link--text focus-inset">
                                                     CONTACT US
                                                 </a></li>
@@ -755,11 +755,11 @@
                                     </ul>
                                 </details>
                             </header-menu></li>
-                        {{-- <li><a id="HeaderMenu-contact-us" href="pages/contact.html"
+                        <li><a id="HeaderMenu-contact-us" href="{{ route('contact-us.index') }}"
                                 class="header__menu-item list-menu__item link link--text focus-inset">
                                 <span>CONTACT US</span>
                             </a>
-                        </li> --}}
+                        </li>
                     </ul>
                 </nav>
 
@@ -896,6 +896,9 @@
         <li id="a11y-refresh-page-message">Choosing a selection results in a full page refresh.</li>
         <li id="a11y-new-window-message">Opens in a new window.</li>
     </ul>
+
+
+    @include('sweetalert::alert')
 
 
     @stack('scripts')

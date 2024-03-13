@@ -126,7 +126,7 @@
                                             data-cc-animate="">
                                             <div class="cart-item__column cart-item__image"
                                                 id="cart-item-image-44388090282211">
-                                                <a href="/products/core-t-shirt-black?variant=44388090282211">
+                                                <a href="{{ route('products.show',$cartItem['product']->id) }}">
                                                     <div class="rimage-outer-wrapper" style="max-width: 100px">
                                                         <div class=" ">
                                                             <img class="rimage__image"

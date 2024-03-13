@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminProductCategoryController;
 use App\Http\Controllers\AdminProductController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Resources\AdminProfileController;
@@ -45,6 +46,7 @@ Route::get('categories/{id}', [ProductCategoryController::class, 'show'])->name(
 
 Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);
 
+Route::resource('contact-us', ContactController::class)->only(['index', 'store']);
 
 Route::middleware(["auth"])->group(function () {
 
