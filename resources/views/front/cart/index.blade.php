@@ -143,7 +143,7 @@
                                                 <div class="cart-item__column cart-item__description">
                                                     <div>
                                                         <a class="name"
-                                                            href="/products/core-t-shirt-black?variant=44388090282211">{{ $cartItem['product']->name }}</a>
+                                                            href="{{ route('products.show',$cartItem['product']->id) }}">{{ $cartItem['product']->name }}</a>
                                                         <div class="small-text">
                                                             <div class="variant">{{ $item['size'] }}</div>
                                                         </div>
