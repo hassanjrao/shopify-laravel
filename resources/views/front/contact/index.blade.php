@@ -1,7 +1,6 @@
 @extends('layouts.front')
 
 @section('content')
-    @extends('layouts.front')
 
     <section id="shopify-section-template--20954407895369__main" class="shopify-section section">
         <link href="{{ asset('front-assets/cdn/shop/t/1/assets/section-main-page579e.css') }}" type="text/css" media="all">
