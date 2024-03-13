@@ -43,7 +43,6 @@ Route::get('categories/{id}', [ProductCategoryController::class, 'show'])->name(
 
 Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware(["auth"])->group(function () {
 
