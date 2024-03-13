@@ -39,6 +39,8 @@ Route::get('products/{id}', [ProductController::class, 'show'])->name('products.
 
 Route::resource('cart', CartController::class)->only(['index', 'store', 'destroy']);
 
+Route::get('cart/remove/{prod_id}/{size}', [CartController::class, 'destroy'])->name('cart.remove');
+
 Route::get('categories/{id}', [ProductCategoryController::class, 'show'])->name('categories.show');
 
 Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);

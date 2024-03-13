@@ -17,33 +17,39 @@ class CartController extends Controller
         // Get cart items
         $cartItems = session()->get('cart');
 
-        [
-            'product_id' => [
-                [
-                    'quantity' => 1,
-                    'size' => 'M'
-                ],
-                [
-                    'quantity' => 2,
-                    'size' => 'L'
-                ]
 
-            ],
-        ];
 
 
         // Merge arrays by size
         $cartItems = $this->mergeArraysBySize($cartItems);
 
+
+        $cartData=[];
+
         foreach($cartItems as $productId => $sizes){
             $product = Product::find($productId);
             $cartItems[$productId]['product'] = $product;
+
+            $cartData[]=[
+                'product'=>$product,
+                'price'=>$product->price,
+                'sizes'=>$sizes
+            ];
+
         }
 
+        // calculate total price
+        $totalPrice = 0;
+        foreach($cartData as $item){
+           foreach($item['sizes'] as $size){
+               $totalPrice += $item['price'] * $size['quantity'];
+           }
+        }
+
+        // dd($totalPrice);
 
 
-
-        return view('front.cart.index', compact('cartItems'));
+        return view('front.cart.index', compact('cartItems','totalPrice'));
 
     }
 
@@ -57,7 +63,7 @@ class CartController extends Controller
             if (!isset($mergedArray[$size][$productId])) {
                 $mergedArray[$size][$productId] = [
                     "quantity" => $quantity,
-                    "size" => $size
+                    "size" => $size,
                 ];
             } else {
                 $mergedArray[$size][$productId]["quantity"] += $quantity;
@@ -150,8 +156,21 @@ class CartController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($productId,$size)
     {
-        //
+        // Remove from cart
+        $cart = session()->get('cart');
+
+        foreach($cart as $index => $item){
+            if($item['product_id'] == $productId && $item['size'] == $size){
+                unset($cart[$index]);
+
+            }
+        }
+
+        session()->put('cart', $cart);
+
+
+        return back()->with('success', 'Product removed from cart successfully!');
     }
 }

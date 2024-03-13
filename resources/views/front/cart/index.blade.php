@@ -96,13 +96,13 @@
             <div class="page-width">
                 <div class="title-wrapper-with-link">
                     <h1 class="title title--primary">Your cart</h1>
-                    <a href="collections/all.html" class="underlined-link">Continue shopping</a>
+                    <a href="{{ route('home') }}" class="underlined-link">Continue shopping</a>
                 </div>
 
                 @if (count($cartItems) == 0)
                     <div class="cart__warnings">
                         <h1 class="cart__empty-text">Your cart is empty</h1>
-                        <a href="collections/all.html" class="button">
+                        <a href="{{ route('home') }}" class="button">
                             Continue shopping
                         </a>
                     </div>
@@ -130,7 +130,7 @@
                                                     <div class="rimage-outer-wrapper" style="max-width: 100px">
                                                         <div class=" ">
                                                             <img class="rimage__image"
-                                                                src="//car-sicko.com/cdn/shop/files/2284D8C8-6B06-4D65-8D00-F4C4785830C6_1024x1024.png?v=1707818586"
+                                                                src="{{ $cartItem['product']->first_image }}"
                                                                 alt="">
 
                                                         </div>
@@ -161,15 +161,19 @@
                                                     <div class="quantity" data-url="/products/signature-hoodie-sex-grey-1"
                                                         data-section="template--20954407993673__main">
 
-                                                        <input class="quantity__input" type="number" name="quantity"
+                                                        <input readonly class="quantity__input" type="number" name="quantity"
                                                             id="enteredQuantity" min="1" step="1"
                                                             value="{{ $item['quantity'] }}" max="null">
                                                     </div>
+
                                                     <a class="remove"
-                                                        href="/cart/change?id=44388090282211:7680da80ede8cc15dfaf2d79f3b990bc&amp;quantity=0">
+                                                    href="{{ route('cart.remove', ['prod_id' => $cartItem['product']->id, 'size' => $item['size']]) }}"
+                                                    >
                                                         Remove
 
                                                     </a>
+
+
                                                 </div>
 
                                                 <div class="cart-item__column cart-item__total" data-line="3">
@@ -226,7 +230,7 @@
                                 <div class="totals">
                                     <h2 class="totals__total">Total</h2>
                                     <p class="totals__total-value">
-
+                                        <span class="theme-money">{{ env('APP_CURRENCY'). $totalPrice }}</span>
                                     </p>
                                 </div>
 
