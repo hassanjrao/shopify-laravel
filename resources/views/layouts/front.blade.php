@@ -841,7 +841,7 @@
                         <h2 class="footer-block__heading inline-richtext"><strong>FOR RELEASE UPDATES AND EXCLUSIVE
                                 ACCESS</strong>
                         </h2>
-                        <form method="post" >
+                        <form method="get" >
                             <input type="hidden" name="form_type" value="customer" /><input type="hidden"
                                 name="utf8" value="✓" /><input type="hidden" name="contact[tags]"
                                 value="newsletter">
