@@ -50,6 +50,8 @@
                 <form method="post" action="{{ route('contact-us.store') }}">
                     @csrf
 
+                    <h4>Email us at hello@carsicko-uk.com for queries.</h4>
+
                     <div class="contact__fields">
                         <div class="field">
                             <input required class="field__input" autocomplete="name" type="text" id="ContactForm-name"
