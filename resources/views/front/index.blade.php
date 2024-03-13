@@ -2,7 +2,7 @@
 
 @section('content')
     <section id="shopify-section-template--20954407829833__image_banner" class="shopify-section section">
-        <link href="//carsicko-uk.com/cdn/shop/t/1/assets/section-image-banner.css?v=104371272348087278231709804901"
+        <link href="{{  asset('front-assets/cdn/shop/t/1/assets/section-image-banner.css')}}"
             rel="stylesheet" type="text/css" media="all">
         <style data-shopify="">
             #Banner-template--20954407829833__image_banner::after {
@@ -12,7 +12,7 @@
         <div id="Banner-template--20954407829833__image_banner"
             class="banner banner--content-align-center banner--content-align-mobile-center banner--large banner--desktop-transparent scroll-trigger animate--fade-in">
             <div class="banner__media media scroll-trigger animate--fade-in"><img
-                    src="{{  asset('front-assets/carsicko-uk.com/cdn/shop/files/cfba6919-42dd-4390-b752-b743b9b58a9d_1728x_c91f1ae1-b612-4d80-84fd-f939452c6b76.jpg')}}"
+                    src="{{  asset('front-assets/cdn/shop/files/cfba6919-42dd-4390-b752-b743b9b58a9d_1728x_c91f1ae1-b612-4d80-84fd-f939452c6b76.jpg')}}"
                     alt=""
                     width="1728" height="1728.0" sizes="100vw" fetchpriority="high">
             </div>
