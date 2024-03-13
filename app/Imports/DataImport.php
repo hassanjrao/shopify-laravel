@@ -19,9 +19,13 @@ class DataImport implements ToCollection
         $categories = [
             'hoodie' => 1,
             'pants' => 2,
+            'pant'=>2,
             'accessories' => 3,
             'caps' => 4,
+            'cap' => 4,
+            'hat'=>4,
             'beanies' => 4,
+            'beanie' => 4,
             'core' => 5,
             'jackets' => 6,
             'jacket' => 6,
