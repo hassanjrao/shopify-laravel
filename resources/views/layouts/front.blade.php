@@ -753,10 +753,11 @@
                                     </ul>
                                 </details>
                             </header-menu></li>
-                        <li><a id="HeaderMenu-contact-us" href="pages/contact.html"
+                        {{-- <li><a id="HeaderMenu-contact-us" href="pages/contact.html"
                                 class="header__menu-item list-menu__item link link--text focus-inset">
                                 <span>CONTACT US</span>
-                            </a></li>
+                            </a>
+                        </li> --}}
                     </ul>
                 </nav>
 
