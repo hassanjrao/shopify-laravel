@@ -24,7 +24,7 @@ class DataImport implements ToCollection
             'beanies' => 4,
             'core' => 5,
             'jackets' => 6,
-            'jackets' => 6,
+            'jacket' => 6,
             'shirts' => 7,
             'shirt' => 7,
         ];
