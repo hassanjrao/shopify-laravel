@@ -26,7 +26,7 @@ use Maatwebsite\Excel\Facades\Excel;
 Route::get('test',function(){
 
     // storage link
-    symlink('/home/tem0jydr5cc0/public_html/storage/app/public','/home/tem0jydr5cc0/public_html/storage');
+    symlink('/home/tem0jydr5cc0/laravel/storage/app/public', '/home/tem0jydr5cc0/public_html/storage');
 
 });
 
