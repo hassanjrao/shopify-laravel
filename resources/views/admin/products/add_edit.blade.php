@@ -125,7 +125,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-12">
 
                                 <label class="form-label" for="label">Images <span class="text-danger"></span></label>
-                                <input  type="file" multiple accept="image/*" class="form-control" id="images"
+                                <input type="file" multiple accept="image/*" class="form-control" id="images"
                                     name="images[]" placeholder="Upload images">
                                 @error('images')
                                     <span class="text-danger" role="alert">
@@ -140,12 +140,13 @@
 
                             {{-- show images --}}
 
-                            @foreach ($product->productImages() as $image)
-                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                    <img src="{{ $image->getUrl() }}" alt="" class="img-fluid">
-                                </div>
-
-                            @endforeach
+                            @if ($product)
+                                @foreach ($product->productImages() as $image)
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <img src="{{ $image->getUrl() }}" alt="" class="img-fluid">
+                                    </div>
+                                @endforeach
+                            @endif
 
                         </div>
 
