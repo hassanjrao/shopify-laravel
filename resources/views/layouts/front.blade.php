@@ -384,10 +384,10 @@
     <link href="{{ asset('front-assets/cdn/shop/t/1/assets/base1ab5.css') }}" rel="stylesheet" type="text/css"
         media="all" />
     <link rel="preload" as="font"
-        href="{{ asset('cdn/fonts/roboto_condensed/robotocondensed_n7.a8dcc495520a7cc0e796688956d83e7a5274e247ad0a.woff2?h1=Y2Q3MjNlLWIzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&amp;h2=Y2Fyc2lja28tdWsuY29t&amp;hmac=23fee4cb9e2c38bcacb97d3109c6a25be31de1f943a8c690d93fd3fa36cbe87d') }}"
+        href="{{ asset('front-asset/cdn/fonts/roboto_condensed/robotocondensed_n7.a8dcc495520a7cc0e796688956d83e7a5274e247ad0a.woff2?h1=Y2Q3MjNlLWIzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&amp;h2=Y2Fyc2lja28tdWsuY29t&amp;hmac=23fee4cb9e2c38bcacb97d3109c6a25be31de1f943a8c690d93fd3fa36cbe87d') }}"
         type="font/woff2" crossorigin>
     <link rel="preload" as="font"
-        href="{{ asset('cdn/fonts/roboto_condensed/robotocondensed_n7.a8dcc495520a7cc0e796688956d83e7a5274e247ad0a.woff2?h1=Y2Q3MjNlLWIzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&amp;h2=Y2Fyc2lja28tdWsuY29t&amp;hmac=23fee4cb9e2c38bcacb97d3109c6a25be31de1f943a8c690d93fd3fa36cbe87d') }}"
+        href="{{ asset('front-asset/cdn/fonts/roboto_condensed/robotocondensed_n7.a8dcc495520a7cc0e796688956d83e7a5274e247ad0a.woff2?h1=Y2Q3MjNlLWIzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&amp;h2=Y2Fyc2lja28tdWsuY29t&amp;hmac=23fee4cb9e2c38bcacb97d3109c6a25be31de1f943a8c690d93fd3fa36cbe87d') }}"
         type="font/woff2" crossorigin>
     <link href="{{ asset('front-assets/cdn/shop/t/1/assets/component-localization-form7e50.css') }}" rel="stylesheet"
         type="text/css" media="all" />
@@ -717,9 +717,8 @@
                         class="header__heading-link link link--text focus-inset">
                         <div class="header__heading-logo-wrapper">
 
-                            <img src="cdn/shop/files/logo-sym-gif_120x_9d972777-fc64-4e57-b711-e07caab4adfb_120x_1_120x_1a508.gif?v=1709832880&amp;width=600"
+                            <img src="{{  asset('front-assets/cdn/shop/files/logo-sym-gif_120x_9d972777-fc64-4e57-b711-e07caab4adfb_120x_1_120x_1a508.gif')}}"
                                 alt="CAR-SICKO"
-                                srcset="//carsicko-uk.com/cdn/shop/files/logo-sym-gif_120x_9d972777-fc64-4e57-b711-e07caab4adfb_120x_1_120x_1.webp?v=1709832880&amp;width=70 70w, //carsicko-uk.com/cdn/shop/files/logo-sym-gif_120x_9d972777-fc64-4e57-b711-e07caab4adfb_120x_1_120x_1.webp?v=1709832880&amp;width=105 105w, //carsicko-uk.com/cdn/shop/files/logo-sym-gif_120x_9d972777-fc64-4e57-b711-e07caab4adfb_120x_1_120x_1.webp?v=1709832880&amp;width=140 140w"
                                 width="70" height="63.58333333333333" loading="eager"
                                 class="header__heading-logo motion-reduce" sizes="(max-width: 140px) 50vw, 70px">
                         </div>
@@ -881,9 +880,7 @@
                     <div class="footer__copyright caption">
                         <small class="copyright__content">&copy; 2024, <a href="{{ route('home') }}"
                                 title="">CAR-SICKO</a></small>
-                        <small class="copyright__content"><a target="_blank" rel="nofollow"
-                                href="https://www.shopify.com/?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">
-                            </a></small>
+
                     </div>
                 </div>
             </div>
