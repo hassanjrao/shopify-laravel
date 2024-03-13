@@ -39,6 +39,7 @@ class ImportDataCommand extends Command
      */
     public function handle()
     {
-        Excel::import(new DataImport, 'csv/products.csv');
+        $file=storage_path('csv/products.csv');
+        Excel::import(new DataImport, $file);
     }
 }
