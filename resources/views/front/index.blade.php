@@ -2,7 +2,7 @@
 
 @section('content')
     <section id="shopify-section-template--20954407829833__image_banner" class="shopify-section section">
-        <link href="{{  asset('front-assets/cdn/shop/t/1/assets/section-image-banner.css')}}"
+        <link href="{{  asset('front-assets/cdn/shop/t/1/assets/section-image-banner7992.css')}}"
             rel="stylesheet" type="text/css" media="all">
         <style data-shopify="">
             #Banner-template--20954407829833__image_banner::after {
