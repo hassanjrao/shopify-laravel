@@ -183,9 +183,19 @@
                         <li class="nav-main-item">
                             <a class="nav-main-link{{ request()->segment(2) == 'products' ? ' active' : '' }}"
                                 href="{{ route('admin.products.index') }}">
-                                
+
                                 <i class="nav-main-link-icon fa fa-fw fa-list"></i>
                                 <span class="nav-main-link-name">Products</span>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-main-item">
+                            <a class="nav-main-link{{ request()->segment(2) == 'announcement' ? ' active' : '' }}"
+                                href="{{ route('admin.announcement.index') }}">
+
+                                <i class="nav-main-link-icon fa fa-fw fa-list"></i>
+                                <span class="nav-main-link-name">Announcement</span>
                             </a>
                         </li>
 

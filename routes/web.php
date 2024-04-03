@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminProductCategoryController;
 use App\Http\Controllers\AdminProductController;
+use App\Http\Controllers\AnnoucementController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductCategoryController;
@@ -58,6 +59,8 @@ Route::middleware(["auth"])->group(function () {
 
         Route::resource('products', AdminProductController::class);
 
+
+        Route::resource("announcement", AnnoucementController::class)->only(["index", "update"]);
 
         Route::resource("profile", AdminProfileController::class)->only(["index", "update"]);
     });

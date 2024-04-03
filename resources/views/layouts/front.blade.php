@@ -622,8 +622,12 @@
 
         {{-- top banner --}}
 
+        @php
+            $announcement = App\Models\Announcement::first();
+        @endphp
+
         <div style="text-align: center">
-            <h3>HOLY GRAIL SALE ENDS 18TH FEB!</h3>
+            <h3>{{ $announcement->title }}</h3>
         </div>
 
 
